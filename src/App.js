@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
+// Import React library
+import React from 'react';
+// Import the Chat component
+import Chat from './components/Chat';
+
+// Define the App component
 function App() {
   return (
+    // Render the Chat component inside a div with the className "App"
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Chat />
     </div>
   );
 }
 
+// Export the App component as the default export
 export default App;
