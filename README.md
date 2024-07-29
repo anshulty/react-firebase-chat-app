@@ -48,21 +48,13 @@ This project is a real-time chat application built using React, Node.js, and Fir
    npm install
 3. Set up Firebase:
 
-Go to the Firebase Console.
-Create a new project.
-Set up Firebase Authentication and enable Google Sign-In.
-Set up Firebase Realtime Database.
-Create a .env file in the root directory and add your Firebase configuration:
-makefile
-Copy code
-REACT_APP_FIREBASE_API_KEY=your_api_key
-REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
-REACT_APP_FIREBASE_DATABASE_URL=your_database_url
-REACT_APP_FIREBASE_PROJECT_ID=your_project_id
-REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-REACT_APP_FIREBASE_APP_ID=your_app_id
- 4.Running the Project
+    Go to the Firebase Console.
+    Create a new project.
+    Set up Firebase Authentication and enable Google Sign-In.
+    Set up Firebase Realtime Database.
+    Create a .env file in the root directory and add your Firebase configuration.
+
+4.Running the Project
     Start the development server:
 
      bash
