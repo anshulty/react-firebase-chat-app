@@ -3,14 +3,13 @@ import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB7n5wnKKrkeiZzcr8mtliJGdQh2IJ1meE",
-    authDomain: "mychatapp-52c84.firebaseapp.com",
-    databaseURL: "https://mychatapp-52c84-default-rtdb.firebaseio.com",
-    projectId: "mychatapp-52c84",
-    storageBucket: "mychatapp-52c84.appspot.com",
-    messagingSenderId: "1036150120371",
-    appId: "1:1036150120371:web:1415295752c803525c75c6",
-    measurementId: "G-ZTTZKNBPSN"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
   };
 
 const app = initializeApp(firebaseConfig);
